@@ -97,4 +97,4 @@ stage('Database docker build') {
           sh 'rm -rf .git ./*'
         }
       }
-    }
+    
