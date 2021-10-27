@@ -35,7 +35,6 @@ pipeline {
             }
          }
       }
-    }
     post { 
       always { 
          echo "Clean local $APP_IMAGE_NAME image"
