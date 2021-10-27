@@ -62,10 +62,8 @@ stage('Database docker build') {
                }
 }
 }
-        // modify to build db image and push to harbor
-  }
-       post { 
-      always { 
+          post { 
+            always { 
          echo "Clean local $DB_IMAGE_NAME image"
          script { 
               try { 
@@ -74,9 +72,9 @@ stage('Database docker build') {
               } catch (err) { 
               echo err.getMessage() 
               } 
-              } 
-              }
-  }
+           } 
+        }
+    }
 }      
       stage('Test'){
         steps {
