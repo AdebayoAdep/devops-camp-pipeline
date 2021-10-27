@@ -89,7 +89,7 @@ stage('Database docker build') {
             echo "Deployment stage"
         }
       }
-    }
+    
     post {
        cleanup {
           echo "Clean workspace"
